@@ -1,0 +1,56 @@
+{
+    "description": "Experiments with multi-annotator models on the new split of the disaggregated ArgValNov dataset",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.000001,
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },            {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.00001,
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.0001,
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.001,
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}

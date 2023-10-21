@@ -1,0 +1,74 @@
+{
+    "description": "Experiments with majority models on the CIMT PartEval Argument Concreteness Corpus",
+    "settings": [
+            {
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "test_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_test_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "combiner": {
+                        "class": "DeepCrossNetwork",
+                        "form": "parallel",
+                        "dense_feature_appendix": 30
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 25,
+                        "num_layers": 1, 
+                        "use_activation_function": false
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 14,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "benjamin/roberta-base-wechsel-german",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            },{
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "test_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_test_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "combiner": {
+                        "class": "LinearCombiner",
+                        "num_layers": 5,
+                        "activation_function": "tanh"
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 25,
+                        "num_layers": 1, 
+                        "use_activation_function": false
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 14,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "benjamin/roberta-base-wechsel-german",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            }
+    ]
+}

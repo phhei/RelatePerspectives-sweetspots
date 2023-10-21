@@ -1,0 +1,206 @@
+{
+    "description": "Experiments with recommender models on the CIMT PartEval Argument Concreteness Corpus",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "LinearCombiner",
+                    "num_layers": 3,
+                    "activation_function": "relu"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.00001,
+            "num_train_epochs": 20,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        }, {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "LinearCombiner",
+                    "num_layers": 5,
+                    "activation_function": "tanh"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.00001,
+            "num_train_epochs": 20,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "DeepCrossNetwork",
+                    "form": "parallel",
+                    "dense_feature_appendix": 30
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.00001,
+            "num_train_epochs": 20,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "DeepCrossNetwork",
+                    "form": "stacked"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.00001,
+            "num_train_epochs": 20,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "LinearCombiner",
+                    "num_layers": 3,
+                    "activation_function": "relu"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.000001,
+            "num_train_epochs": 30,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        }, {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "LinearCombiner",
+                    "num_layers": 5,
+                    "activation_function": "tanh"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.000001,
+            "num_train_epochs": 30,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "DeepCrossNetwork",
+                    "form": "parallel",
+                    "dense_feature_appendix": 30
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.000001,
+            "num_train_epochs": 30,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "recommender_params": {
+                "combiner": {
+                    "class": "DeepCrossNetwork",
+                    "form": "stacked"
+                },
+                "user_tower": {
+                    "class": "LinearEncoder",
+                    "embedding_size": 50,
+                    "num_layers": 3, 
+                    "use_activation_function": true
+                }
+            },
+            "learning_rate": 0.000001,
+            "num_train_epochs": 30,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}

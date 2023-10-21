@@ -1,0 +1,41 @@
+{
+    "description": "Proof-of-concept experiment with the ValNov dataset",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-Annotator-seperated/train_single_conclusion_non-annotator-aggregation.csv",
+            "dev_path": "Datasets/ValNov-Annotator-seperated/dev_single_conclusion_non-annotator-aggregation.csv",
+            "test_path": "Datasets/ValNov-Annotator-seperated/test_single_conclusion_non-annotator-aggregation.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.00001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-Annotator-seperated/train_single_conclusion_non-annotator-aggregation.csv",
+            "dev_path": "Datasets/ValNov-Annotator-seperated/dev_single_conclusion_non-annotator-aggregation.csv",
+            "test_path": "Datasets/ValNov-Annotator-seperated/test_single_conclusion_non-annotator-aggregation.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.000001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "random_seeds": [
+                2923262358
+            ]
+        },
+        {
+            "data_path": "Datasets/ValNov-Annotator-seperated/train_single_conclusion_non-annotator-aggregation.csv",
+            "dev_path": "Datasets/ValNov-Annotator-seperated/dev_single_conclusion_non-annotator-aggregation.csv",
+            "test_path": "Datasets/ValNov-Annotator-seperated/test_single_conclusion_non-annotator-aggregation.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.0001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}  

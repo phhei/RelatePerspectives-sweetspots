@@ -1,0 +1,60 @@
+{
+    "description": "Experiments with majority models on the CIMT PartEval Argument Concreteness Corpus",
+    "settings": [
+            {
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "SINGLE_TASK",
+                "classifier_type": "HEAD",
+                "learning_rate": 0.000001,
+                "num_train_epochs": 10,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "bert-base-multilingual-uncased",
+                "random_seeds": [
+                    2923262358
+                ]
+            },            {
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "SINGLE_TASK",
+                "classifier_type": "HEAD",
+                "learning_rate": 0.00001,
+                "num_train_epochs": 10,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "bert-base-multilingual-uncased",
+                "random_seeds": [
+                    2923262358
+                ]
+            },
+            {
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "SINGLE_TASK",
+                "classifier_type": "HEAD",
+                "learning_rate": 0.0001,
+                "num_train_epochs": 10,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "bert-base-multilingual-uncased",
+                "random_seeds": [
+                    2923262358
+                ]
+            },
+            {
+                "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+                "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+                "dataset_type": "CIMT",
+                "architecture" : "SINGLE_TASK",
+                "classifier_type": "HEAD",
+                "learning_rate": 0.001,
+                "num_train_epochs": 10,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "bert-base-multilingual-uncased",
+                "random_seeds": [
+                    2923262358
+                ]
+            }
+    ]
+}

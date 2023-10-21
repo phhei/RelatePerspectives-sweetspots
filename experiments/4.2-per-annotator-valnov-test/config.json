@@ -1,0 +1,121 @@
+{
+    "description": "Experiments with per-annotator models on the new split of the disaggregated ArgValNov dataset",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "model_for_annotator": "101",
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358,
+                1842330218,
+                827634346,
+                171049425,
+                991167630,
+                1070299506,
+                762227973,
+                555596930,
+                1010185121,
+                419984946
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "model_for_annotator": "102",
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358,
+                1842330218,
+                827634346,
+                171049425,
+                991167630,
+                1070299506,
+                762227973,
+                555596930,
+                1010185121,
+                419984946
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "model_for_annotator": "103",
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358,
+                1842330218,
+                827634346,
+                171049425,
+                991167630,
+                1070299506,
+                762227973,
+                555596930,
+                1010185121,
+                419984946
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "model_for_annotator": "111",
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358,
+                1842330218,
+                827634346,
+                171049425,
+                991167630,
+                1070299506,
+                762227973,
+                555596930,
+                1010185121,
+                419984946
+            ]
+        },{
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "model_for_annotator": "112",
+            "num_train_epochs": 10,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358,
+                1842330218,
+                827634346,
+                171049425,
+                991167630,
+                1070299506,
+                762227973,
+                555596930,
+                1010185121,
+                419984946
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "description": "Proof-of-concept experiment with a Single Task model",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr.csv",
+            "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        },{
+            "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+            "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+            "test_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_test_non-aggr.csv",
+            "dataset_type": "CIMT",
+            "architecture" : "SINGLE_TASK",
+            "classifier_type": "HEAD",
+            "learning_rate": 0.00001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "pretrained_name_path": "roberta-base",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}  

@@ -1,0 +1,17 @@
+{
+    "description": "Proof-of-concept experiment with the CIMT dataset",
+    "settings": [
+        {
+            "data_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_train_non-aggr.csv",
+            "dev_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_dev_non-aggr.csv",
+            "test_path": "Datasets/cimt_argument_concreteness-dataset-selected_split/Concreteness_test_non-aggr.csv",
+            "dataset_type": "CIMT",
+            "architecture" : "MULTI_TASK",
+            "learning_rate": 0.00001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}

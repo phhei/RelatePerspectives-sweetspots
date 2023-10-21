@@ -1,0 +1,17 @@
+{
+    "description": "Proof-of-concept experiment with the Recommender architecture",
+    "settings": [
+        {
+            "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr.csv",
+            "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr.csv",
+            "dataset_type": "VALNOV",
+            "architecture" : "RECOMMENDER",
+            "batch_size": 8,
+            "learning_rate": 0.00001,
+            "eval_setting": "TRAIN_TEST_SPLIT",
+            "random_seeds": [
+                2923262358
+            ]
+        }
+    ]
+}  

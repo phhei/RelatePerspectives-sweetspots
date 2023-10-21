@@ -1,0 +1,158 @@
+{
+    "description": "Experiments with recommender models on the ValNov dataset",
+    "settings": [
+            {
+                "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+                "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+                "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+                "dataset_type": "VALNOV",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "text_tower": {
+                        "similar_parameter_strength": 2.0
+                    },
+                    "combiner": {
+                        "class": "DeepCrossNetwork",
+                        "form": "parallel",
+                        "dense_feature_appendix": 30
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 50,
+                        "num_layers": 3, 
+                        "use_activation_function": true
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 12,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "roberta-base",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            },{
+                "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+                "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+                "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+                "dataset_type": "VALNOV",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "text_tower": {
+                        "similar_parameter_strength": 1.0
+                    },
+                    "combiner": {
+                        "class": "DeepCrossNetwork",
+                        "form": "parallel",
+                        "dense_feature_appendix": 30
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 50,
+                        "num_layers": 3, 
+                        "use_activation_function": true
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 12,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "roberta-base",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            },{
+                "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+                "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+                "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+                "dataset_type": "VALNOV",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "text_tower": {
+                        "similar_parameter_strength": 0.1
+                    },
+                    "combiner": {
+                        "class": "DeepCrossNetwork",
+                        "form": "parallel",
+                        "dense_feature_appendix": 30
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 50,
+                        "num_layers": 3, 
+                        "use_activation_function": true
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 12,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "roberta-base",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            },{
+                "data_path": "Datasets/ValNov-new_split/ValNov_train_non-aggr_v2.csv",
+                "dev_path": "Datasets/ValNov-new_split/ValNov_dev_non-aggr_v2.csv",
+                "test_path": "Datasets/ValNov-new_split/ValNov_test_non-aggr_v2.csv",
+                "dataset_type": "VALNOV",
+                "architecture" : "RECOMMENDER",
+                "recommender_params": {
+                    "text_tower": {
+                        "similar_parameter_strength": 0.0
+                    },
+                    "combiner": {
+                        "class": "DeepCrossNetwork",
+                        "form": "parallel",
+                        "dense_feature_appendix": 30
+                    },
+                    "user_tower": {
+                        "class": "LinearEncoder",
+                        "embedding_size": 50,
+                        "num_layers": 3, 
+                        "use_activation_function": true
+                    }
+                },
+                "learning_rate": 0.00001,
+                "num_train_epochs": 12,
+                "eval_setting": "TRAIN_TEST_SPLIT",
+                "pretrained_name_path": "roberta-base",
+                "random_seeds": [
+                    2923262358,
+                    1842330218,
+                    827634346,
+                    171049425,
+                    991167630,
+                    1070299506,
+                    762227973,
+                    555596930,
+                    1010185121,
+                    419984946
+                ]
+            }
+    ]
+}
