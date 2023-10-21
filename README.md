@@ -27,7 +27,7 @@ The entry point is the [run.py](argperspectives%2Frun.py). This code requires a 
 If you use this code, please cite our paper:
 
 ```
-@inproceedings{ye-etal-2022-generative,
+@inproceedings{heinisch-etal-2023-architectural,
     title = "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!",
     author = "Heinisch, Philipp  and
       Orlikowski, Matthias  and
