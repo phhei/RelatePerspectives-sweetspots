@@ -1,4 +1,25 @@
-# Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!
+# Architectural Sweet Spots for Modeling Human Label Variation
+
+This project contains code and data for our EMNLP 2023 paper ["Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!"](Repo to the EMNLP23-Paper "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!" ) 
+
+## Citation
+
+There is a [preprint](https://arxiv.org/abs/2311.03153) available on arXiv. If you use this code, please cite our paper:
+
+```
+@inproceedings{heinisch-etal-2023-architectural,
+    title = "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!",
+    author = "Heinisch, Philipp  and
+      Orlikowski, Matthias  and
+      Romberg, Julia and
+      Cimiano, Philipp",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Sentosa Gateway, Singapore",
+    publisher = "Association for Computational Linguistics",
+}
+```
 
 ## Setup
 
@@ -21,22 +42,3 @@ The project uses [poetry](https://python-poetry.org/docs/) to manage dependencie
 ## Usage
 
 The entry point is the [run.py](argperspectives%2Frun.py). This code requires a config.json file. You can find example configs in the [experiments](experiments) folder.
-
-## Citation
-
-If you use this code, please cite our paper:
-
-```
-@inproceedings{heinisch-etal-2023-architectural,
-    title = "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!",
-    author = "Heinisch, Philipp  and
-      Orlikowski, Matthias  and
-      Romberg, Julia and
-      Cimiano, Philipp",
-    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
-    month = dec,
-    year = "2023",
-    address = "Sentosa Gateway, Singapore",
-    publisher = "Association for Computational Linguistics",
-}
-```
