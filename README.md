@@ -1,6 +1,6 @@
 # Architectural Sweet Spots for Modeling Human Label Variation
 
-This project contains code and data for our EMNLP 2023 paper ["Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!"](Repo to the EMNLP23-Paper "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!" ) 
+This project contains code and data for our EMNLP 2023 paper [Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!](https://arxiv.org/abs/2311.03153) 
 
 ## Citation
 
