@@ -1,23 +1,30 @@
 # Architectural Sweet Spots for Modeling Human Label Variation
 
-This project contains code and data for our EMNLP 2023 paper [Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!](https://arxiv.org/abs/2311.03153) 
+This project contains code and data for our EMNLP 2023 paper [Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!](https://aclanthology.org/2023.emnlp-main.687/) 
 
 ## Citation
 
-There is a [preprint](https://arxiv.org/abs/2311.03153) available on arXiv. If you use this code, please cite our paper:
+The official [print](https://aclanthology.org/2023.emnlp-main.687/) is available! If you use this code, please cite our paper:
 
 ```
 @inproceedings{heinisch-etal-2023-architectural,
-    title = "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It's Best to Relate Perspectives!",
+    title = "Architectural Sweet Spots for Modeling Human Label Variation by the Example of Argument Quality: It{'}s Best to Relate Perspectives!",
     author = "Heinisch, Philipp  and
       Orlikowski, Matthias  and
-      Romberg, Julia and
+      Romberg, Julia  and
       Cimiano, Philipp",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
     booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
     month = dec,
     year = "2023",
-    address = "Sentosa Gateway, Singapore",
+    address = "Singapore",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.687",
+    doi = "10.18653/v1/2023.emnlp-main.687",
+    pages = "11138--11154",
+    abstract = "Many annotation tasks in natural language processing are highly subjective in that there can be different valid and justified perspectives on what is a proper label for a given example. This also applies to the judgment of argument quality, where the assignment of a single ground truth is often questionable. At the same time, there are generally accepted concepts behind argumentation that form a common ground. To best represent the interplay of individual and shared perspectives, we consider a continuum of approaches ranging from models that fully aggregate perspectives into a majority label to {``}share nothing{''}-architectures in which each annotator is considered in isolation from all other annotators. In between these extremes, inspired by models used in the field of recommender systems, we investigate the extent to which architectures that predict labels for single annotators but include layers that model the relations between different annotators are beneficial. By means of two tasks of argument quality classification (argument concreteness and validity/novelty of conclusions), we show that recommender architectures increase the averaged annotator-individual F1-scores up to 43{\%} over a majority-label model. Our findings indicate that approaches to subjectivity can benefit from relating individual perspectives.",
 }
 ```
 
